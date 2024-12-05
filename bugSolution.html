@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is visible.
+  </div>
+
+  <script>
+    // Correct way to add an element using appendChild
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "This is a paragraph";
+    document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
